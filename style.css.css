@@ -1,0 +1,295 @@
+*{
+	margin: 0;
+	padding: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("11.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+ }
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border:1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+
+}
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+.logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title h1{
+	color:#fff;
+	font-size:70px;
+	text-align: center;
+
+}
+.title p{
+	color:#fff;
+	font-size: 30px;
+	font-style: italic;
+	text-align: center;
+	font-family: Century Gothic;
+
+}
+
+/*---about-us---*/
+#about-us{
+	width: 100%;
+	padding:50px 0;
+}
+.about{
+	text-align: center; 
+	padding-bottom: 70px;
+}
+.about p{
+	margin:auto;
+	font-size: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ac5353;
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+}
+.about p::after{
+	content: '';
+	width:50px;
+	height:35px;
+	background: linear-gradient(#ac5353,#fff) ;
+	position: absolute;
+	top:-15px;
+	left:0;
+	z-index:-1;
+	transform: rotate(10deg);
+	border-top-left-radius:45px;
+	border-bottom-right-radius:45px;
+	
+
+}
+.about h1{
+	padding-top:10px;
+	font-family: Century Gothic;
+	margin-top: auto;
+	margin-left:10px;
+	text-align: center;
+	color:#867979;
+	font-size:30px;
+
+}
+.about-box{
+	margin:auto;
+	width: 80%
+}
+.about-box p{
+	font-family: Century Gothic;
+	margin-top: 10px;
+	margin-left:10px;
+	text-align:left;
+	color:#000;
+	font-size:20px;
+}
+/*---Cakes---*/
+#cakes{
+	width:100%;
+	padding:70px 0;
+	background:#efefef;
+}
+.service-box{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin:auto;
+}
+.single-services{
+	flex-basis: 48%;
+	text-align: center;
+	border-radius: 7px;
+	margin-bottom: 20px;
+	color:#fff;
+	position: relative;
+}
+.single-services img{
+	width:100%;
+	border-radius:7px;
+}
+overlay{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top: 0;
+	border-radius: 7px;
+	cursor: pointer;
+	background:linear-gradient(rgba(0,0,0,0.5),#ac5353);
+	opacity:0;
+	transition: 1s;
+}
+.single-services :hover.overlay{
+	opacity: 1;
+}
+.service-desc{
+	width: 80%;
+	position: absolute;
+	bottom:40%;
+	left: 50%;
+	opacity: 1;
+	transform: translateX(-50%);
+	
+
+}
+.service-desc p{
+	font-size:20px;
+	color: #fff;
+	
+}
+/*---Reviwes---*/
+#Reviews{
+	width: 100%;
+	padding: 70px 0;
+}
+.Reviews-row{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.Reviews-col{
+	flex-basis: 28%;
+	padding: 10px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px 3px #ac5353;
+	cursor: pointer;
+	transition: transform .5s;
+}
+.Reviews-col p{
+	color:#000;
+	font-size:15px;
+	text-align: center;
+	font-family: Century Gothic;
+}
+.User{
+	display: flex;
+	align-items: center;
+	margin: 20px 0; 
+}
+.User img{
+	width:70px;
+	margin-right:20px;
+	border-radius: 3px;
+}
+.user-info{
+	color:#000;
+	}
+.user-info h4{
+	color:#000;
+	font-size:15px;
+	font-family: Century Gothic;
+}
+.user-info small{
+	color:#ac5353;
+	font-size:12px;
+	font-family: Century Gothic;
+}
+.Reviews-col:hover{
+	transform: translateY(-7px);
+}
+/*footer*/
+#contact{
+	padding: 100px 0 20px;
+	background:#efefef; 
+}
+.contact-row{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.contact-left, .contact-right{
+	flex-basis: 45%;
+	padding: 10px;
+	margin-bottom: 20px;
+
+}
+.contact-right{
+	text-align: right;
+}
+.contact-right h1{
+	font-family: Century Gothic;
+	margin: 10px 0;
+}
+.contact-left h1{
+	font-family: Century Gothic;
+	margin: 10px 0;
+}
+.contact-row p{
+	line-height: 35px;
+	font-family: Century Gothic;
+
+}
+.contact-left .fa, .contact-right .fa{
+	font-size: 20px;
+	color: #ac5353;
+	margin: 10px;
+}
+.social-links{
+	text-align: center;
+}
+.social-links .fa{
+	height: 40px;
+	width: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	border: 1px solid #ac5353;
+	margin: 40px 5px 0;
+	cursor: pointer;
+	color: #ac5353;
+	transform: .5s;
+
+}
+.social-links .fa:hover{
+	background:#ac5353;
+	color: #fff;
+	transform: translateY(-7px);
+}
+.social-links p{
+	font-size: 12px;
+	margin-top: 20px;
+	font-family: Century Gothic;
+}
+.
